@@ -1,35 +1,43 @@
-def simple_calculator():
-    print(" SIMPLE CALCULATOR") 
+def simple_calculator(): 
+   print ('Simple calculator')
+ 
+ 
+   while True:
     try:
-        num1 = float(input("Enter first number: ")) 
+     num1 = float(input("Enter first number: "))
+     break
     except ValueError:
         print("Invalid input. Please enter a valid number.")
-        return
+   while True:
     operator = input("Enter your operator (+, -, *, /): ")
+    if operator in ["+", "-", "*", "/"]:
+        break
+    else:
+        print("Invalid operator. Please enter +, -, *, or /.")
+
+   while True:    
     try:
-        num2 = float(input("Enter second number: "))
+     num2 = float(input("Enter second number: "))
+     break
     except ValueError:
-        print("Invalid input. Please enter a valid number.")
-        return
-    if operator == "+":
+        print("Invalid input. Please enter a valid number.") 
+    
+   if operator == "+":
         print(f"Results: {num1 + num2}")
-    elif operator == "-":
-     print(f"Results: {num1 - num2}")
-    elif operator == "*":
-     print(f"Results: {num1 * num2}")
-    elif operator == "/":
+   elif operator == "-":
+        print(f"Results: {num1 - num2}")
+   elif operator == "*":
+          print(f"Results: {num1 * num2}")
+   elif operator == "/":
      if num2 == 0:
         print("Error: Division by zero is not allowed.")
      else:
         print(f"Results: {num1 / num2}")
-    else:
-      print("Invalid operator. Please try again.")
+    
       
-    
-    
-   
-        
-        
+
+
+
 
 def main():
     while True :
@@ -42,11 +50,11 @@ def main():
             print(" welcome back!'.")
             continue
         else:
-            print("Invalid input. Please enter 'yes' or 'no'.")
+            print("Invalid input. Please enter 'yes' or 'no'.")        
            
 
 
 
 if __name__ == "__main__":   
-    main()
-            
+     main()
+           
