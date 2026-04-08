@@ -1,5 +1,5 @@
 def simple_calculator(): 
-   print ('Simple calculator')
+   print ('WELCOME TO THE SIMPLE CALCULATOR')
  
  
    while True:
